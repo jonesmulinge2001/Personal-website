@@ -1,7 +1,7 @@
 <div class="main">
     <div class="left-side">
         <div class="image">
-            <img src="../assets/image1.jpg" alt="">
+            <img src="../assets/image1.png" alt="">
         </div>
         <div class="menu-bar">
             <div class="links active">
@@ -35,5 +35,98 @@
             <fa-icon [icon]="faLinkedin"></fa-icon>
         </div>
     </div>
-    <div class="right-side"></div>
+    <div class="right-side">
+        <!-- profile area -->
+        <div class="profile">
+            <div class="top">
+                <div class="left">
+                    <h3>I'm</h3>
+                    <h1>Jonathan Mwandi</h1>
+                    <p class="typewriter">{{displayedText}}</p>
+                </div>
+                <div class="right">
+                    <img src="../assets/image1.png" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+                <button class="resume-btn">
+                    <fa-icon [icon]="faArrowDown"></fa-icon>
+                    <p>resume</p>
+                </button>
+                <button class="hire-btn">
+                    <fa-icon [icon]="faLink"></fa-icon>
+                    <p>hire me</p>
+                </button>
+            </div>
+        </div>
+        <!-- about section -->
+        <div class="about">
+            <h1>about me</h1>
+            <div class="profile">
+                <div class="image">
+                    <img src="../assets/image1.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste <br> eos dignissimos cupiditate perferendis cumque, necessitatibus, minus libero  <br> nostrum consequatur odit odio tempore vitae. Distinctio, aperiam corporis <br> consectetur eum voluptatem reprehenderit.</p>
+                    <div class="primary-btn">
+                        <fa-icon [icon]="faLink"></fa-icon>
+                        <p>hire me</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stripes">
+                <div class="stripe">
+                    <div class="text">
+                        <span>Design</span>
+                        <p>85%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="stripe">
+                    <div class="text">
+                        <span>Development</span>
+                        <p>90%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="stripe">
+                    <div class="text">
+                        <span>SEO</span>
+                        <p>90%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="stripe">
+                    <div class="text">
+                        <span>Marketing</span>
+                        <p>85%</p>
+                    </div>
+                    <div class="bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- education section -->
+        <div class="education">
+            <h1>education</h1>
+            <div class="cards">
+                <div class="card" *ngFor="let education of educations">
+                    <div class="date">
+                        <p>{{education.startDate}}</p>
+                        <small>to</small>
+                        <p>{{education.endDate}}</p>
+                    </div>
+                    <h2>{{education.level}}</h2>
+                    <p>{{education.para}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -1,0 +1,68 @@
+.main{
+    background-color: #f6d155;
+    min-height: fit-content;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 6rem;
+}
+.main > .left-side {
+    display: flex;
+    flex-direction: column;
+    background-color: #504a4a;
+    width: 18rem;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+}
+.main > .left-side > .image > img{
+    width: 18rem;
+    height: 10rem;
+}
+.main > .left-side > .menu-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+}
+.main > .left-side > .menu-bar > .links{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-top: 1px  solid #aaa;
+}
+.main > .left-side > .menu-bar > .links:hover{
+    background-color: black;
+}
+.main > .left-side > .menu-bar > .links:hover p{
+    color: #ff7e71;
+}
+.main > .left-side > .menu-bar > .links:hover > fa-icon{
+    color: aliceblue;
+}
+.main > .left-side > .menu-bar > .links > p{
+    text-transform: capitalize;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main > .left-side > .menu-bar > .links > fa-icon{
+    color: #ff7e71;
+}
+.main > .left-side > .menu-bar > .active{
+    border: none;
+}
+.main > .left-side > .menu-bar > .active > p{
+    color: #ff7e71;
+}
+.main > .left-side > .menu-bar > .active > fa-icon{
+    color: aliceblue;
+}
+.main > .left-side > .menu-bar > .social-icons{
+    
+}
+.main > .left-side > .social-icons >fa-icon{
+    background-color: #ff7e71;
+}
